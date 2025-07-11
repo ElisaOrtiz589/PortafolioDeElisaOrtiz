@@ -1,0 +1,74 @@
+/* Paleta de colores personalizada */
+:root {
+  --rosa-oscuro: #C2185B;
+  --rosa-claro: #FDECF2;
+  --lavanda: #D1C4E9;
+  --gris-claro: #F5F5F5;
+  --gris-oscuro: #333333;
+  --rosa-suave: #F48FB1;
+  --footer: #424242;
+}
+
+/* Navbar personalizada */
+.navbar {
+  background-color: var(--rosa-oscuro) !important;
+}
+
+.navbar-brand img {
+  height: 80px;
+  width: auto;
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--rosa-suave) !important;
+}
+
+/* Sección Hero */
+.hero {
+  background-color: var(--rosa-claro);
+  min-height: 450px;
+  padding-top: 110px;
+  text-align: center;
+}
+
+.hero-principal {
+  padding: 3rem;
+}
+
+.hero-imagen-desarrollador {
+  width: 150px;
+  height: 150px;
+  margin: 20px;
+  object-fit: cover;
+  border-radius: 50%;
+  object-position: 0 25%;
+}
+
+.hero-principal h1 {
+  color: var(--rosa-oscuro);
+  font-size: 2.5rem;
+}
+
+.hero-principal h2 {
+  font-size: 1.5rem;
+  color: var(--gris-oscuro);
+}
+
+.hero-inferior {
+  padding: 1.5rem 0;
+}
+
+.hero-inferior i {
+  font-size: 4.5rem;
+}
+
+/* Íconos tech (ya estaban bien) */
+.html { color: #dd4b25; }
+.css { color: #264de4; }
+.js { color: #f0db4f; }
+.react { color: #61dafb; }
+.github { color: black; }
