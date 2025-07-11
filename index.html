@@ -25,89 +25,112 @@
   <header>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-              <img src="./assets/imagenes/logo.png" class="img-fluid" alt="Logo de Elisa Ortiz">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-4">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Acerca de mi</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Educación</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Experiencia</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Proyectos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Mis Commits</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Footer</a>
-                </li>
-              </ul>
-            </div>
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/imagenes/logo.png" class="img-fluid" alt="Logo de Elisa Ortiz">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-4">
+            <li class="nav-item">
+              <a class="nav-link" href="#hero">Acerca de mi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#educacion">Educación</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experiencia">Experiencia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Mis Commits</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Footer</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
-
-    
   </header>
 
     <!-- Main -->
-    <main>
-      <!-- Presentación: Sección Hero -->
-  <section class="hero d-flex flex-column justify-content-center align-items-center">
-    <div class="hero-principal"> 
-              
-      <img class="hero-imagen-desarrollador d-block mx-auto"  src="./assets/imagenes/miFoto.jpg" alt="Foto de Elisa Ortiz">
-      <h1> Hola, soy Elisa Ortiz</h1>
-      <h2>Desarrollo sitios web Front-End</h2>
-    </div>
-  
+  <main>
+    <!-- Presentación: Sección Hero -->
+    <section id="hero" class="hero d-flex flex-column justify-content-center align-items-center">
+      <div class="hero-principal"> 
+                
+        <img class="hero-imagen-desarrollador d-block mx-auto"  src="./assets/imagenes/miFoto.jpg" alt="Foto de Elisa Ortiz">
+        <h1> Hola, soy Elisa Ortiz</h1>
+        <h2>Desarrollo sitios web Front-End</h2>
+      </div>
     
-    <div class="hero-inferior d-flex flex-wrap align-items-center justify-content-center gap-5">
       
-      <i class="html fa-brands fa-html5"></i>
-      
-      <i class="css fa-brands fa-css3-alt"></i>
-      
-      <i class="js fa-brands fa-js"></i>
-      
-      <i class="react fa-brands fa-react"></i>
-      
-      <i class="github fa-brands fa-github"></i>
-      
-    </div>
-  </section>
+      <div class="hero-inferior d-flex flex-wrap align-items-center justify-content-center gap-5">
+        
+        <i class="html fa-brands fa-html5"></i>
+        
+        <i class="css fa-brands fa-css3-alt"></i>
+        
+        <i class="js fa-brands fa-js"></i>
+        
+        <i class="react fa-brands fa-react"></i>
+        
+        <i class="github fa-brands fa-github"></i>
+        
+      </div>
+    </section>
 
-  <!-- Educación -->
-  <section id="educacion" class="educacion seccion-oscura my-5 mx-auto">
-    <div class="contenedor-educacion">
-      <h2 class="seccion-titulo ">Educación</h2>
-      
-      <ul class="educacion-lista">
+    <!-- Educación -->
+    <section id="educacion" class="educacion seccion-oscura py-5">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="contenedor-educacion">
+          <h2 class="seccion-titulo ">Educación</h2>
+          
+          <ul class="educacion-lista">
             <li><strong>Educación Básica:</strong> Colegio Liahona</li>
             <li><strong>Educación Media:</strong> Liceo A-36</li>
             <li><strong>Educación Superior:</strong> Universidad Aconcagua</li>
             <li><strong>Bootcamp Front End:</strong> Desafío LATAM 2025</li>
-            
-        </ul>
-    </div>
-  </section>      
+          </ul>
+        </div>
+        <div class="Birrete">
+          <img src="./assets/imagenes/birrete2.png" alt="Birrete" class="img-fluid">
+        </div>
+      </div>
+    </section>      
 
-        <!-- Experiencia -->
+    <!-- Experiencia -->
+    <section id="experiencia" class="experiencia seccion-experiencia py-5">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="contenedor-experiencia">
+          <h2 class="seccion-titulo ">Experiencia</h2>
+          <h3 class="experiencia-empresas"> Royal Caribean, Celebrity Cruises & Princess Cruises</h3>
+          <p><strong>Cargo:</strong> Vendedora / Encargada de tienda</p>
+          <p><strong>Fecha:</strong> Septiembre 2007 - Abril 2022</p>
+          <p><strong>Ubicación:</strong> A bordo de cruceros internacionales</p>
+          <h3 class="experiencia-descripcion">Descripción:</h3>
+          <p>Durante 15 años trabajé en el área de ventas a bordo de cruceros internacionales, desempeñando funciones clave como vendedora y posteriormente como encargada de tienda. Esta experiencia me permitió desarrollar habiliades altamente valoradas en el mundo laboral, especialmente en entornos dinámicos y multiculturales.</p>
+          <ul class="experiencia-lista">
+            <li>"Gestión de tiendas a bordo: Control de inventario, visual merchandising, apertura/cierre y supervisión general."</li>
+            <li>"Cumplimiento de metas comerciales y manejo de indicadores de rendimiento."</li>
+            <li>"Atención al cliente en contextos exigentes, resolviendo dudas y conflictos de forma empática y profesional."</li>
+            <li>"Liderazco y coordinación de equipos diversos, promoviendo un buen clima laboral."</li>
+            <li>"Alta capacidad de adptación, disciplina y trabajo bajo presión."</li>
+            <li>"Comunicación efectiva en inglés y español."</li>
+          </ul>
+        </div>
+      </div>
+    </section>     
         
         <!-- Proyectos -->
         
-    </main>
+  </main>
 
     <!-- Footer -->
     <footer>

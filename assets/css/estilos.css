@@ -3,6 +3,7 @@
   --rosa-oscuro: #C2185B;
   --rosa-claro: #FDECF2;
   --lavanda: #D1C4E9;
+  --lavanda-claro: #EDE7F6;
   --gris-claro: #F5F5F5;
   --gris-oscuro: #333333;
   --rosa-suave: #F48FB1;
@@ -77,10 +78,6 @@
 .educacion {
   background-color: var(--lavanda);
   padding: 3rem;
-  border-radius: 12px;
-  width: 100%;
-  max-width: 900px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .seccion-titulo {
@@ -107,6 +104,55 @@
   color: var(--rosa-oscuro);
 }
 
+/* Estilos para la imagen del birrete */
+.Birrete img {
+  width: 300px; /* Ajusta este valor a tu gusto */
+}
 
+/* Ajuste para el título dentro de la sección educación */
+.educacion .seccion-titulo {
+  text-align: left;
+}
 
+/* Sección Experiencia */
+.seccion-experiencia {
+  background-color: var(--lavanda-claro); /* #EDE7F6 */
+  padding: 4rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+}
 
+.experiencia-empresas {
+  font-size: 1.4rem;
+  color: var(--rosa-oscuro);
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.experiencia-descripcion {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--rosa-oscuro);
+  margin-top: 1.5rem;
+}
+
+.experiencia-lista {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+}
+
+.experiencia-lista li {
+  margin-bottom: 0.8rem;
+  position: relative;
+  padding-left: 1rem;
+  color: var(--gris-oscuro);
+}
+
+.experiencia-lista li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--rosa-oscuro);
+  font-size: 1.2rem;
+  line-height: 1;
+}
