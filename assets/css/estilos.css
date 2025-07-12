@@ -156,3 +156,29 @@
   font-size: 1.2rem;
   line-height: 1;
 }
+
+/* Sección Proyectos */
+.image-top {
+  height: 600px; /* Altura más balanceada para las tarjetas */
+  background-size: cover;  /*Hace que la imagen cubra todo el div */
+  background-position: top; /* Alinea la imagen a la parte superior */
+}
+
+/* botones de sección Mis Proyectos */
+.btn-outline-custom-pink {
+  --bs-btn-color: #d63384;
+  --bs-btn-border-color: #d63384;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #d63384;
+  --bs-btn-hover-border-color: #d63384;
+  --bs-btn-focus-shadow-rgb: 214, 51, 132;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #d63384;
+  --bs-btn-active-border-color: #d63384;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #d63384;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #d63384;
+  --bs-gradient: none;
+}
+
