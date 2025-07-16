@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+}
+
+/* Titulo principal */
+.titulo  {
+    /* Layout Properties */
+    width: 100%;
+    height: 73px;
+    text-align: center; /* Centra el texto horizontalmente */
+    line-height: 73px; /* Centra el texto verticalmente */
+    color: #FFFFFF; /* Letras blancas */
+    background-color: #000000; /* Fondo negro */
+}
+
+.titulo h1 { /* Aplica el estilo directamente al h1 dentro de .titulo */
+    font-size: 60px; /* Prueba con este valor, o uno más grande como 80px, 100px */
+    /* Si el texto se desborda, puedes ajustar la altura del .titulo o el line-height */
+}
+
+.imagen-principal {
+    width: 100%; /* El contenedor del img ocupa todo el ancho */
+    height: auto; /* Mantiene la altura deseada para el contenedor si es importante para el diseño general */
+    overflow: hidden; /* Esto es clave: ocultará cualquier parte de la imagen que se salga del contenedor */
+    display: flex; /* Para centrar la imagen dentro del div */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+.imagen-principal img {
+    /* Estilos para la imagen dentro del div */
+    width: 100%; /* Asegura que la imagen ocupe el 100% del ancho de su contenedor */
+    height: auto; /* Permite que la altura se ajuste automáticamente manteniendo la proporción */
+    display: block; /* Elimina cualquier espacio extra que algunos navegadores añaden a las imágenes */
+}
+
+.informacion {
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 70px 0; /* Espaciado interno para que no se pegue al borde */
+}
+
+
+.informacion-contenido {
+    display: flex;
+    align-items: center;     /* Alinea verticalmente el texto y la imagen en el centro */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    gap: 50px;               /* Añade un espacio de 50px entre el texto y la imagen */
+    
+    
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+.informacion-texto {
+    flex: 1; /* Le dice al bloque de texto que ocupe el espacio disponible */
+}
+
+.informacion-texto p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+/* El contenedor de la imagen. Es el otro "flex item". */
+.informacion-imagen {
+    flex: 1; /* Le dice al bloque de la imagen que ocupe el espacio disponible */
+    max-width: 399px; /* Limitamos el ancho para que la imagen no se haga gigante */
+}
+
+.informacion-imagen img {
+    width: 100%; /* Hace que la imagen se ajuste al tamaño de su contenedor (.informacion-imagen) */
+    height: 237px; /* Le damos una altura fija para controlar el espacio */
+    object-fit: cover; /* La imagen cubre el espacio sin deformarse */
+    display: block; /* Buena práctica para eliminar espacios extra debajo de las imágenes */
+}
+
+/* DESCRIPCION */
+
+/* CARACTERISTICAS */
+.caracteristicas {
+    width: 100%;
+    background: #1E1A13 0% 0% no-repeat padding-box;
+    padding: 70px 0; /* Añadimos espaciado interno vertical */
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    color: #FFFFFF;
+    margin-bottom: 50px; /* Espacio entre el título y los iconos */
+}
+
+/* Contenedor principal de los iconos. Lo hacemos Flex. */
+.caract-iconos {
+    display: flex;
+    justify-content: space-evenly; /* Distribuye el espacio equitativamente */
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto; /* Centra el contenedor de iconos en la página */
+}
+
+/* Estilo para cada grupo individual (ojo, mano, brocha) */
+.caract-ojo, .caract-mano, .caract-brocha {
+    display: flex;
+    flex-direction: column; /* Apila los elementos (icono y texto) verticalmente */
+    align-items: center;    /* Centra los elementos horizontalmente */
+    color: #FFFFFF;
+}
+
+/* Aumentamos el tamaño de los iconos */
+.caract-iconos i {
+    font-size: 45px;
+    margin-bottom: 20px; /* Espacio entre el icono y el texto */
+}
+
+/* Limpiamos el estilo del span y ajustamos la fuente */
+span {
+    text-align: center;
+    font-weight: 300;
+    font-size: 24px;
+}
+
+/* GALERIA */
+
+.galeria-imagenes {
+    background-color: #000000;
+    padding: 70px 0;
+
+    /* Convertimos la galería en un contenedor Flex */
+    display: flex;
+    justify-content: center; /* Centramos las imágenes horizontalmente */
+    align-items: center;     /* Centramos las imágenes verticalmente */
+    gap: 20px;               /* Espacio entre las imágenes */
+}
+
+/* Estilos para cada imagen DENTRO de la galería */
+.galeria-imagenes img {
+    width: 316px;  /* Ancho fijo como en el diseño original */
+    height: 202px; /* Alto fijo como en el diseño original */
+    object-fit: cover;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #1E1A13;
+    height: 102px;
+
+    /* Usamos Flexbox para centrar el contenido perfectamente */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+}
+
+footer a {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: none; 
+}

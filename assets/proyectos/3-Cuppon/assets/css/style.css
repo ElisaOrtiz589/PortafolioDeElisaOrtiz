@@ -1,0 +1,37 @@
+body {
+    font-family: "Roboto", sans-serif;
+    color: #212529; /* Color de texto por defecto de Bootstrap para consistencia */
+}
+
+/* Proyectos */
+
+/* titulo */
+.card-title {
+    font-size: 1.25rem; /* Equivalente a 20px */
+    font-weight: 500;
+}
+
+/* texto */
+.card-body .card-text {
+    color: #707070; /* Un gris suave para el texto secundario */
+    font-size: 1rem; /* Equivalente a 16px */
+}
+
+.card-body .card-text-i {
+    color: #707070;
+    font-size: 0.9rem; /* Equivalente a ~14px */
+}
+
+.price-original {
+    color: #707070;
+    font-size: 1rem; /* 16px */
+}
+
+.price-offer {
+    font-size: 1.25rem; /* 20px */
+}
+
+/* Footer */
+.footer-logo {
+    width: 100px;
+}

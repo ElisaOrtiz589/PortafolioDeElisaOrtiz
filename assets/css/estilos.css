@@ -1,0 +1,215 @@
+/* Paleta de colores personalizada */
+:root {
+  --rosa-oscuro: #C2185B;
+  --rosa-claro: #FDECF2;
+  --lavanda: #D1C4E9;
+  --lavanda-claro: #EDE7F6;
+  --gris-claro: #F5F5F5;
+  --gris-oscuro: #333333;
+  --rosa-suave: #F48FB1;
+  --footer: #424242;
+}
+
+/* imágen de fondo */
+body {
+  font-family: "Roboto", sans-serif;
+  background-image: url('../imagenes/floreado2.jpg');
+  background-color: #F5F5F5; /* Este es el --gris-claro de la paleta */
+  background-size: cover; /* Cubre todo el espacio sin repetir */
+  background-attachment: fixed; /* Fija la imagen para que no se mueva con el scroll */ 
+  background-position: center; /* Centra la imagen */
+}
+
+/* Estilos generales para todos los encabezados */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--rosa-oscuro);
+  font-family: "Quicksand", sans-serif; /* Fuente más redondeada para títulos */
+}
+
+/* Tamaños jerárquicos para los encabezados */
+h1 { font-size: 3rem; }
+h2 { font-size: 2.5rem; } /* Títulos de sección y subtítulo del hero */
+h3 { font-size: 1.7rem; } /* Títulos de experiencia */
+h5 { font-size: 1.4rem; } /* Títulos de las tarjetas de proyecto */
+
+/* Estilos generales para párrafos y listas */
+p, li {
+  color: var(--gris-oscuro);
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+
+/* Navbar personalizada */
+.navbar {
+  background-color: var(--rosa-oscuro);
+}
+
+.navbar-brand img {
+  height: 80px;
+  width: auto;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffffff;
+  font-size: 1.2rem; 
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: var(--rosa-suave);
+}
+
+/* Sección Hero */
+.hero {
+  min-height: 450px;
+  padding-top: 110px;
+  text-align: center;
+}
+
+.hero-principal {
+  padding: 3rem;
+}
+
+.hero-imagen-desarrollador {
+  width: 150px;
+  height: 150px;
+  margin: 20px;
+  object-fit: cover;
+  border-radius: 50%;
+  object-position: 0 25%;
+}
+
+/* titulo: Hola soy Elisa Ortiz */
+.hero-principal h1 {
+  color: var(--rosa-oscuro);
+  /* Se reserva la fuente especial para el título principal */
+  font-family: "Dancing Script", cursive;
+  font-size: 3.5rem; 
+}
+
+.hero-inferior {
+  padding: 1.5rem 0;
+}
+
+/* iconos tech*/
+.hero-inferior i {
+  font-size: 4.5rem;
+  transition: transform 0.2s ease-in-out; /* Añade una transición suave */
+}
+
+.hero-inferior i:hover {
+  transform: scale(1.15); /* Agranda ligeramente el ícono al pasar el mouse */
+  cursor: pointer; /* Cambia el cursor a una manito para indicar que es interactivo */
+}
+
+/* colores iconos tech */
+.html { color: #dd4b25; }
+.css { color: #264de4; }
+.js { color: #f0db4f; }
+.react { color: #61dafb; }
+.github { color: black; }
+
+/* Sección Educación */
+.educacion {
+  padding: 3rem;
+}
+
+.seccion-titulo {
+  /* El tamaño y color ahora se heredan de la regla general h2 */
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.educacion-lista {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.educacion-lista li {
+  margin-bottom: 0.8rem;
+}
+
+.educacion-lista strong {
+  color: var(--rosa-oscuro);
+}
+
+/* Estilos para la imagen del birrete */
+.Birrete img {
+  width: 250px; 
+}
+
+/* Ajuste para el título dentro de la sección educación */
+.educacion .seccion-titulo {
+  text-align: left;
+}
+
+/* experiencia */
+.experiencia-empresas {
+  /* El tamaño y color ahora se heredan de la regla general h3 */
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.experiencia-descripcion {
+  /* El tamaño y color ahora se heredan de la regla general h3 */
+  font-weight: 600;
+  margin-top: 1.5rem;
+}
+
+.experiencia-lista {
+  margin-top: 1rem;
+}
+
+.experiencia-lista li {
+  margin-bottom: 0.8rem;
+  padding-left: 0.5rem; /* Un pequeño padding para alinear el texto */
+}
+
+/* marcadores de la lista */
+.experiencia-lista li::marker {
+  color: var(--rosa-oscuro);
+}
+
+/* botones de sección Mis Proyectos */
+.btn-outline-custom-pink {
+  --bs-btn-color: #d63384;
+  --bs-btn-border-color: #d63384;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #d63384;
+  --bs-btn-hover-border-color: #d63384;
+  --bs-btn-focus-shadow-rgb: 214, 51, 132;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #d63384;
+  --bs-btn-active-border-color: #d63384;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #d63384;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #d63384;
+  --bs-gradient: none;
+}
+
+/* Mis colaboraciones */
+.github-icono {
+  padding: 1.5rem 0;
+}
+
+.github-icono i {
+  font-size: 4.5rem;
+  transition: transform 0.2s ease-in-out; /* Añade una transición suave */
+}
+
+.github-icono i:hover {
+  transform: scale(1.15); /* Agranda ligeramente el ícono al pasar el mouse */
+  cursor: pointer; /* Cambia el cursor a una manito para indicar que es interactivo */
+}
+
+/* Footer */
+footer .d-flex a {
+  color: #198754; /* Color verde para los íconos */
+  transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+footer .d-flex a:hover {
+  color: #146c43; /* Un verde más oscuro para el hover */
+  transform: scale(1.15); /* Mismo efecto de escala que los otros íconos */
+}

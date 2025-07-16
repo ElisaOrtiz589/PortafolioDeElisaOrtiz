@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+}
+
+/* HEADER */
+
+.header-content { 
+    background: url(../imgs/header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 280px;
+    margin-bottom: 30px;
+    position: relative; /* Necesario para posicionar .texto absolutamente dentro de él */
+}
+
+.header {
+    margin: 0;
+    padding: 0;
+}
+.header .texto { /* El div que contiene h1 y p en el header */
+    position: absolute;   /* Permite superponer el texto */
+    top: 5%;            
+    left: 5%;           
+    z-index: 1;           /* Asegura que el texto esté por encima de la imagen */
+    color: #333333;       
+}
+
+.header .texto h1 {
+    margin: 0;
+    font-weight: 400;
+    font-size: 5em; 
+    margin-bottom: 10px; /* Espacio debajo del h1 */
+}
+
+.header .texto h1 strong {
+    font-weight: 700; 
+}
+
+.header .texto p {
+    margin: 0;
+    font-size: 3em; 
+}
+
+/* PRODUCTOS */
+.productos {
+    width: 80%;
+    margin: auto;
+}
+
+.productos td {
+    width: 50%;
+    padding: 2em;
+    vertical-align: top; /* Mantiene la alineación superior*/
+}
+
+.productos img {
+    width: 50%; 
+    height: auto;
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+    border-radius: 10%;
+}
+
+.productos p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+    color: black;
+    margin-top: 0;
+    margin-bottom: 1.5em;/* Espacio entre el nombre del producto y el precio */
+}
+
+
+/* FOOTER */
+.footer {
+    height: 6em; 
+    padding-top: 2em;    /* Añade espacio interno arriba */
+    padding-bottom: 1.5em; /* Añade espacio interno abajo */
+    background-color: orangered;
+    color: white;
+    text-align: center;
+    font-weight: 900;
+}
+
+.footer h3 {
+    margin-top: 0; /* Quita el margen superior por defecto del h3 */
+    margin-bottom: 0.8em; /* Espacio debajo del título "Contacto" */
+}
+
+.footer ul {
+    list-style: none; /* Quita los puntos de la lista */
+    padding: 0;       /* Quita el padding por defecto del ul */
+    margin: 0;        /* Quita el margen por defecto del ul */
+}
+
+.footer ul li {
+    display: inline-block; /* Coloca los elementos de la lista en línea */
+    margin-left: 10px;     /* Espacio a la izquierda de cada item */
+    margin-right: 10px;    /* Espacio a la derecha de cada item */
+}
+
+.footer ul li a {
+    color: inherit; /* Hereda el color del texto del footer (blanco) */
+    text-decoration: none; /* Quita el subrayado de los links */
+}
